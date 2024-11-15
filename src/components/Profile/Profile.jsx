@@ -3,9 +3,9 @@ import React from 'react'
 const personalImageAlt = "Daniel Ortega"
 export const Profile = () => {
   return (
-    <article className="flex flex-col items-center justify-center gap-8 text-gray-700 dark:text-gray-300 md:flex-row md:ml-[50px]">
+    <article className="flex flex-col items-center justify-center gap-8 text-gray-700 dark:text-gray-300 md:flex-row md:ml-[50px] px-4 sm:px-8">
     {/* Texto de presentación */}
-    <div className="[&>p]:mb-4 [&>p>strong]:text-yellow-500 dark:[&>p>strong]:text-yellow-100 [&>p>strong]:font-normal [&>p>strong]:font-mono text-pretty order-2 md:order-1">
+    <div className="[&>p]:mb-4 [&>p>strong]:text-yellow-500 dark:[&>p>strong]:text-yellow-100 [&>p>strong]:font-normal [&>p>strong]:font-mono text-pretty order-2 md:order-1 px-4 sm:px-8">
       <p>
         Me llamo Daniel Ortega . Soy <strong>
           desarrollo de Software Full Stack especializado en Java Backend con Spring.

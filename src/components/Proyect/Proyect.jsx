@@ -36,7 +36,7 @@ const PROJECTS = [
 export const Proyect = () => {
   return (
     <div className="flex flex-col gap-y-16 md:ml-[50px]">
-    <div  className="flex  text-indigo-600 text-2xl md:text-4xl font-bold"> <FaProjectDiagram className="size-7" />Proyectos</div>  
+    <div  className="flex items-center justify-center text-indigo-600 text-2xl md:text-4xl font-bold"> <FaProjectDiagram className="size-7" />Proyectos</div>  
     {PROJECTS.map(({ image, title, description, link, github }) => (
       <article
         key={title}
@@ -44,7 +44,7 @@ export const Proyect = () => {
       >
         {/* Imagen del proyecto */}
         <div className="w-full md:w-1/2">
-          <div className="relative flex flex-col items-center col-span-6 row-span-5 gap-8 transition duration-500 ease-in-out transform shadow-xl overflow-hidden rounded-xl sm:rounded-xl md:group-hover:-translate-y-1 md:group-hover:shadow-2xl lg:border lg:border-gray-800 lg:hover:border-gray-700 lg:hover:bg-gray-800/50">
+          <div className="relative flex flex-col items-center col-span-6 row-span-5 gap-8 transition duration-500 ease-in-out transform shadow-xl overflow-hidden rounded-xl sm:rounded-xl md:group-hover:-translate-y-1 md:group-hover:shadow-2xl lg:border lg:border-gray-800 lg:hover:border-gray-700 lg:hover:bg-gray-800/50 px-4 sm:px-8">
             <img
               alt={`Imagen del proyecto ${title}`}
               className="object-cover object-top w-full h-56 transition duration-500 sm:h-full md:scale-110 md:group-hover:scale-105 "
@@ -56,13 +56,13 @@ export const Proyect = () => {
 
         {/* Información del proyecto */}
         <div className="w-full md:w-1/2 md:max-w-lg">
-          <h3 className="text-2xl font-bold text-gray-800 dark:text-gray-100">
+          <h3 className="text-2xl font-bold text-gray-800 dark:text-gray-100 px-4 sm:px-8">
             {title}
           </h3>
-          <p className="mt-2 text-gray-700 dark:text-gray-400">
+          <p className="mt-2 text-gray-700 dark:text-gray-400 px-4 sm:px-8">
             {description}
           </p>
-          <footer className="flex items-center justify-start mt-4 gap-x-4">
+          <footer className="flex items-center justify-start mt-4 gap-x-4 px-4 sm:px-8">
             {/* Botón GitHub */}
             {github && (
               <a

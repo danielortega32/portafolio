@@ -5,7 +5,7 @@ export const Main = () => {
   return (
     <div class="flex flex-col md:flex-row items-center bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md h-screen mb-0">
       {/* Sección izquierda: Imagen */}
-      <div class="w-full md:w-1/3 mb-4 md:mb-0">
+      <div class="flex justify-center md:w-full md:ml-auto md:mr-auto">
         <img 
           src="https://i.ibb.co/YNfDxxK/dani.png" 
           alt="Profile"
